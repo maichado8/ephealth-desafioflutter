@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "605459084539",
+    "project_id": "ephealth-desafio",
+    "storage_bucket": "ephealth-desafio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605459084539:android:4b13d901c214f2add76c5e",
+        "android_client_info": {
+          "package_name": "com.example.ephealth_desafio_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605459084539-lp2h4s2ov7u7knd98053gi855k2mol95.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdV985CDXsF-y6w17tWUeitjLHdKzUWuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605459084539-lp2h4s2ov7u7knd98053gi855k2mol95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
