@@ -34,9 +34,13 @@ class UserModel {
       uid: map['uid'] ?? '',
       birthday: map['birthday'] ?? '',
       name: map['name'] ?? '',
-      sex: map['sex'].toString(),
-      eligibilityStatus: map['eligibilityStatus'] ?? '',
-      fillStatus: map['fillStatus'] ?? '',
+      sex: map['sex'] == 0 ? 'Masculino' : 'Feminino',
+      eligibilityStatus: map['eligibilityStatus'] == 'notEligible'
+          ? 'Não Elegível'
+          : map['eligibilityStatus'] == 'eligible'
+              ? 'Elegível'
+              : 'Pendente',
+      fillStatus: map['fillStatus'] == 'finished' ? 'finalizado' : 'Parcial' '',
     );
   }
 
