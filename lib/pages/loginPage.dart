@@ -1,11 +1,9 @@
 // ignore_for_file: deprecated_member_use
-
 import 'dart:developer';
-
-import 'package:ephealth_desafio_flutter/pages/signupPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -14,15 +12,11 @@ class LoginPage extends StatefulWidget {
   _LoginPageState createState() => _LoginPageState();
 }
 
-// Color Scheme generated from Material Theme Builder web
-// Head to https://material-foundation.github.io/material-theme-builder/#/custom to create
-
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Theme(
       data: ThemeData(
-          colorScheme: darkColorScheme,
           textTheme: GoogleFonts.poppinsTextTheme()
               .apply(displayColor: Colors.white, bodyColor: Colors.white),
           useMaterial3: true),
@@ -42,59 +36,62 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                const SizedBox(
-                  height: 50,
+                SizedBox(
+                  height: 50.h,
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10.w),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       Image(
-                        image: AssetImage(
+                        image: const AssetImage(
                           "assets/images/teste.png",
                         ),
-                        width: 120,
+                        width: 120.w,
                       ),
                     ],
                   ),
                 ),
-                const SizedBox(
-                  height: 15,
+                SizedBox(
+                  height: 15.h,
                 ),
-                const Text(
+                Text(
                   'A Saúde\num passo à frente',
                   style: TextStyle(
-                    fontSize: 38,
+                    fontSize: 38.sp,
                     color: Color(0xff061566),
                   ),
                 ),
-                const SizedBox(
-                  height: 20,
+                SizedBox(
+                  height: 20.h,
                 ),
-                const Text(
+                Text(
                   'Uma abordagem definitiva para a saúde, começando agora.​',
                   style: TextStyle(
-                    fontSize: 20,
-                    color: Color(0xff9fa7d4),
+                    fontSize: 20.sp,
+                    color: const Color(0xff9fa7d4),
                   ),
                 ),
-                const SizedBox(
-                  height: 30,
+                SizedBox(
+                  height: 30.h,
                 ),
                 FlatButton(
-                  height: 40,
-                  color: Color(0xfffe00ab),
+                  height: 40.h,
+                  color: const Color(0xfffe00ab),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
                   ),
                   onPressed: () => Get.toNamed('/http'),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 50, right: 50),
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 50.w, right: 50.w),
                     child: Text(
                       "Acessar",
-                      style: TextStyle(fontSize: 18),
+                      style: TextStyle(
+                        fontSize: 18.sp,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
