@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 // ignore: depend_on_referenced_packages
 import 'package:google_fonts/google_fonts.dart';
 
@@ -36,18 +37,24 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      getPages: [
-        GetPage(name: "/", page: () => const LoginPage(), children: [
-          GetPage(
-            name: '/http',
-            page: () => HomePage(),
-            binding: HttpBindings(),
-          )
-        ])
-      ],
-      theme: ThemeData(
-          useMaterial3: true, textTheme: GoogleFonts.poppinsTextTheme()),
-    );
+    return ScreenUtilInit(
+        designSize: const Size(360, 800),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        builder: (context, child) {
+          return GetMaterialApp(
+            getPages: [
+              GetPage(name: "/", page: () => const LoginPage(), children: [
+                GetPage(
+                  name: '/http',
+                  page: () => const HomePage(),
+                  binding: HttpBindings(),
+                )
+              ])
+            ],
+            theme: ThemeData(
+                useMaterial3: true, textTheme: GoogleFonts.poppinsTextTheme()),
+          );
+        });
   }
 }
