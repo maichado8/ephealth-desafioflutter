@@ -2,7 +2,7 @@
 
 O projeto consite em um desafio onde é necessario desenvolver uma aplicação em lista de cadastro vindo de um back-end interno da empresa Ephealth. 
 
-## Getting Started
+## Questionário pós-teste
 
 
 Quais foram as maiores dificuldades?
@@ -15,9 +15,9 @@ Qual foi a complexidade e tempo necessário para conclusão do desafio? O prazo 
 
 Quais os aprendizados com a execução do desafio? 
 
--Versionamento de código e aplicação do zero a entrega em UI/UX.
+- Versionamento de código e aplicação do zero a entrega em UI/UX.
 
 Quais seriam suas sugestões para melhorar a descrição dos requisitos e documentação do modelo de dados?
 
--Desafio bem planejado onde requer um conhecimento abrangente dos contéudos da área; 
--Sugiro que peçam para que seja desenvolvido uma página de login com conexão logada.
+- Desafio bem planejado onde requer um conhecimento abrangente dos contéudos da área; 
+- Sugiro que peçam para que seja desenvolvido uma página de login com conexão logada.
